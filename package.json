@@ -1,0 +1,47 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "db:gen": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit push:pg",
+    "db:studio": "drizzle-kit studio --host 127.0.0.1",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@glitchtech-dev/react-motion": "^1.5.1",
+    "@vercel/postgres": "^0.5.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "cmdk": "^0.2.0",
+    "drizzle-orm": "0.28.6",
+    "geist": "^1.2.0",
+    "motion": "^10.16.4",
+    "nuxt": "^3.8.2",
+    "tailwind-merge": "^2.0.0",
+    "vue": "^3.3.9",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.10.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/node": "^20.10.1",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "dotenv": "^16.3.1",
+    "drizzle-kit": "0.19.13",
+    "postcss": "^8.4.31",
+    "postcss-preset-env": "^9.3.0",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.5",
+    "tailwindcss-animate": "^1.0.7",
+    "vercel": "^32.5.6"
+  },
+  "packageManager": "pnpm@8.10.0"
+}
