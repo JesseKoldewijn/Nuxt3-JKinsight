@@ -4,19 +4,32 @@ export default defineNuxtConfig({
   srcDir: "src",
   serverDir: "src/server",
   devtools: { enabled: true },
-  experimental: {
-    typescriptBundlerResolution: true,
-    typedPages: true,
-  },
-  css: ["@/styles/global.css"],
+  css: ["@/styles/global.scss"],
   postcss: {
+    // @ts-ignore-next-line
+    parser: "postcss-scss",
     plugins: {
+      "postcss-import": {},
       tailwindcss: {},
-      autoprefixer: {},
       "postcss-preset-env": {
         stage: 3,
       },
+      autoprefixer: {},
       cssnano: {},
+    },
+  },
+  modules: ["@nuxtjs/tailwindcss"],
+  hooks: {
+    "components:dirs": (dirs) => {
+      dirs.unshift({
+        path: "@/components/ui",
+        // this is required else Nuxt will autoImport `.ts` file
+        extensions: [".vue"],
+        // prefix for your components, eg: UiButton
+        // prefix: "Ui",
+        // prevent adding another prefix component by it's path.
+        pathPrefix: false,
+      });
     },
   },
   app: {
