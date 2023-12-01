@@ -1,4 +1,5 @@
 {
+  "tailwindCSS.experimental.configFile": "./tailwind.config.cjs",
   "files.associations": {
     "*.css": "tailwindcss"
   },

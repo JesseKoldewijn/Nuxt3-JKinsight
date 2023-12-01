@@ -1,17 +1,16 @@
 <template>
-  <NuxtLayout>
-    <div>
-      <h1>JKinsight Nuxt3</h1>
-      <NuxtLink to="/about-me">About Me</NuxtLink>
-    </div>
-  </NuxtLayout>
+  <html>
+    <body class="dark">
+      <slot />
+    </body>
+  </html>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Home",
+  name: "DefaultLayout",
   setup() {
     return {};
   },

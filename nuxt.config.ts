@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   srcDir: "src",
   serverDir: "src/server",
   devtools: { enabled: true },
+  experimental: {
+    viewTransition: true,
+  },
   css: ["@/styles/global.scss"],
   postcss: {
     // @ts-ignore-next-line
@@ -33,6 +36,7 @@ export default defineNuxtConfig({
     },
   },
   app: {
+    pageTransition: { name: "page", mode: "out-in" },
     head: {
       link: [
         {

@@ -1,8 +1,8 @@
 <template>
   <NuxtLayout>
     <div>
-      <h1>JKinsight Nuxt3</h1>
-      <NuxtLink to="/about-me">About Me</NuxtLink>
+      <h1>About Me | JKinsight Nuxt3</h1>
+      <NuxtLink to="/">Home</NuxtLink>
     </div>
   </NuxtLayout>
 </template>
@@ -11,7 +11,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Home",
+  name: "AboutMe",
   setup() {
     return {};
   },
