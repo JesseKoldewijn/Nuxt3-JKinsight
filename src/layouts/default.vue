@@ -1,5 +1,8 @@
 <template>
-  <slot />
+  <LayoutNavbar />
+  <div class="mx-4 mt-14">
+    <slot />
+  </div>
 </template>
 
 <script lang="ts">
