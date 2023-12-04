@@ -1,9 +1,5 @@
 <template>
-  <html>
-    <body class="dark">
-      <slot />
-    </body>
-  </html>
+  <slot />
 </template>
 
 <script lang="ts">

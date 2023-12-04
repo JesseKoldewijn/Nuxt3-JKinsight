@@ -1,10 +1,6 @@
 <template>
-  <NuxtLayout>
-    <div>
-      <h1>JKinsight Nuxt3</h1>
-      <NuxtLink to="/about-me">About Me</NuxtLink>
-    </div>
-  </NuxtLayout>
+  <h1>JKinsight Nuxt3</h1>
+  <NuxtLink to="/about-me">About Me</NuxtLink>
 </template>
 
 <script lang="ts">

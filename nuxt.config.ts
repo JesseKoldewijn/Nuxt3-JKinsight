@@ -7,21 +7,25 @@ export default defineNuxtConfig({
   experimental: {
     viewTransition: true,
   },
-  css: ["@/styles/global.scss"],
+  css: ["@/styles/global.css"],
   postcss: {
     // @ts-ignore-next-line
-    parser: "postcss-scss",
     plugins: {
+      tailwindcss: {
+        config: "./tailwind.config.cjs",
+      },
+      autoprefixer: {},
       "postcss-import": {},
-      tailwindcss: {},
       "postcss-preset-env": {
         stage: 3,
       },
-      autoprefixer: {},
       cssnano: {},
     },
   },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
+  colorMode: {
+    classSuffix: "",
+  },
   hooks: {
     "components:dirs": (dirs) => {
       dirs.unshift({
