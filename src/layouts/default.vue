@@ -1,6 +1,6 @@
 <template>
   <LayoutNavbar />
-  <div class="mx-4 mt-14">
+  <div class="mx-4 mt-20">
     <slot />
   </div>
 </template>
