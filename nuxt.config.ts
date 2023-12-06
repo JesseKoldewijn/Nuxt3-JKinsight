@@ -1,8 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 /** @type {import("nuxt/config").DefineNuxtConfig} */
 export default defineNuxtConfig({
-  srcDir: "src",
-  serverDir: "src/server",
   devtools: { enabled: true },
   experimental: {
     viewTransition: true,
