@@ -1,6 +1,11 @@
 <template>
   <LayoutNavbar />
-  <div class="mx-4 mt-20 !transition-colors !duration-500">
+  <div
+    class="mx-4 mt-20 !transition-colors !duration-200"
+    v-motion
+    :initial="{ opacity: 0 }"
+    :enter="{ opacity: 1 }"
+  >
     <slot />
   </div>
 </template>

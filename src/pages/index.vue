@@ -1,6 +1,5 @@
 <template>
-  <h1>JKinsight Nuxt3</h1>
-  <NuxtLink to="/about-me">About Me</NuxtLink>
+  <h1>JKinsight Nuxt3 - Home</h1>
 </template>
 
 <script lang="ts">

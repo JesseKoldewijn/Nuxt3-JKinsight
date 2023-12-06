@@ -15,30 +15,11 @@ const toggleTheme = (currentTheme: string) => {
     <Button
       @click="toggleTheme($colorMode.value)"
       class="rounded-full border p-2"
-      v-motion="{
-        initial: { opacity: 0 },
-        enter: { opacity: 1 },
-        leave: { opacity: 0 },
-      }"
     >
-      <span
-        v-if="$colorMode.value === 'light'"
-        v-motion="{
-          initial: { opacity: 0 },
-          enter: { opacity: 1 },
-          leave: { opacity: 0 },
-        }"
-      >
+      <span v-if="$colorMode.value === 'light'">
         <Moon />
       </span>
-      <span
-        v-else
-        v-motion="{
-          initial: { opacity: 0 },
-          enter: { opacity: 1 },
-          leave: { opacity: 0 },
-        }"
-      >
+      <span v-else>
         <Sun />
       </span>
     </Button>
