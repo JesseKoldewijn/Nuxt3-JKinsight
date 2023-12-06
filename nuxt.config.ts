@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       cssnano: {},
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@vueuse/motion/nuxt"],
   colorMode: {
     classSuffix: "",
   },
@@ -37,6 +37,26 @@ export default defineNuxtConfig({
         // prevent adding another prefix component by it's path.
         pathPrefix: false,
       });
+    },
+  },
+  runtimeConfig: {
+    public: {
+      motion: {
+        directives: {
+          "pop-bottom": {
+            initial: {
+              scale: 0,
+              opacity: 0,
+              y: 100,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              y: 0,
+            },
+          },
+        },
+      },
     },
   },
   app: {

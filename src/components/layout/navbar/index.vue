@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed inset-x-0 top-0 z-40 flex bg-[rgba(255,255,255,0.75)] px-6 py-4 dark:bg-[rgba(0,0,0,0.75)]"
+    class="fixed inset-x-0 top-0 z-40 flex bg-background bg-opacity-80 px-6 py-4 transition-colors duration-500"
   >
     <div class="relative inset-0 flex w-full">
       <div
@@ -15,7 +15,7 @@
         <NuxtLink to="/projects">Projects</NuxtLink>
       </div>
       <div class="z-40 ml-8 flex justify-center">
-        <LayoutThemeToggle />
+        <ThemeToggle />
       </div>
     </div>
   </nav>

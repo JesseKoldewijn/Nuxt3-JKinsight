@@ -16,6 +16,7 @@
     "@glitchtech-dev/react-motion": "^1.5.1",
     "@vercel/postgres": "^0.5.1",
     "@vueform/toggle": "^2.1.4",
+    "@vueuse/motion": "^2.0.0",
     "clsx": "^2.0.0",
     "cmdk": "^0.2.0",
     "drizzle-orm": "0.28.6",

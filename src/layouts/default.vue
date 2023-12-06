@@ -1,6 +1,6 @@
 <template>
   <LayoutNavbar />
-  <div class="mx-4 mt-20">
+  <div class="mx-4 mt-20 !transition-colors !duration-500">
     <slot />
   </div>
 </template>
